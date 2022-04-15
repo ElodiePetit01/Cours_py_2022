@@ -1,7 +1,7 @@
 import os
 import pandas
 
-athlete_reroot2 = pandas.read_excel("/Users/utilisateur/Dropbox/École/Hiver 2022/Programmation Python/git/Cours_py_2022/athlete_reroot2.xlsx")
+athlete_reroot2 = pandas.read_excel(r"athlete_reroot2.xlsx")
 print(athlete_reroot2)
 
 lst1 = athlete_reroot2["age"].tolist()
