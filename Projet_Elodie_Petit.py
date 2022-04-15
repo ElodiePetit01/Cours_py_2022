@@ -150,7 +150,7 @@ athlete_reroot2 = pandas.DataFrame(imp.fit_transform(athlete_reroot),
 print(athlete_reroot2)
 
 #Pour sauvegarder la nouvelle base de données athlete_reroot2 en excel dans l'ordinateur :
-path = "/Users/utilisateur/Dropbox/École/Hiver 2022/Programmation Python/git/Cours_py_2022/athlete_reroot2.xlsx"
+path = r"athlete_reroot2.xlsx"
 writer = pandas.ExcelWriter(path, engine = 'xlsxwriter')
 athlete_reroot2.to_excel(writer)
 writer.save()
