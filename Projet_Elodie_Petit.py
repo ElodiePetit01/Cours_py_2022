@@ -46,7 +46,7 @@ print(athlete_reroot)
 df = pandas.DataFrame(athlete_reroot)
 df.to_excel("athlete_re.xlsx", 
     engine = "openpyxl")
-athlete_re = pandas.read_excel("athlete_re.xlsx")
+athlete_re = pandas.read_excel(r"athlete_re.xlsx")
 
 
 class READFILE:
