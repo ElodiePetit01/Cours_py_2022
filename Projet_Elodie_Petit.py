@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+#-*- coding: utf-8 -*-
+
 #  Projet python Élodie Petit (20134205) 
 
 # Importation des librairies 
@@ -33,7 +36,7 @@ from sqlite3 import connect
 # Importation de la base de données 
 
 pandas.set_option('display.max_columns', None)
-athlete_reroot = pandas.read_excel("/Users/utilisateur/Dropbox/École/Hiver 2022/Programmation Python/git/Cours_py_2022/athlete_reroot.xlsx")
+athlete_reroot = pandas.read_excel(r"athlete_reroot.xlsx")
 print(athlete_reroot)
 
 
