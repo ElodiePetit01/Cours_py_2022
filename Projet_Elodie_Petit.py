@@ -75,6 +75,13 @@ athlete_reroot1.read_excel()
 
 liste = athlete_reroot1.read_excel()["age"].tolist()
 
+ """La fonction recherche_lineaire cherche une valeur dans une liste   
+    Args:
+        x = la valeur cherchée(str)        
+        Table = liste avec des nombres (int)
+    Return:                                      
+        True si la valeur est dans la liste 
+    """
 def recherche_lineaire(x, Table):
         
     if x in Table:
@@ -163,8 +170,13 @@ la fonction de gestion d'erreur nommée recherchestring '''
 
 age = athlete_reroot2["age"].tolist()
 
+ """La fonction recherchestring regarde s'il reste des strinfs dans la base de données  
+    Args: 
+        liste = liste avec des nombres (int)
+    Return:                                      
+        oui si la valeur n'est pas un string
+    """
 def recherchestring(liste):
-    """Cette fonction regarde s'il reste des strings dans la base de données"""
     
     for index in range (len(liste)):
         if isinstance(liste[index], float):
